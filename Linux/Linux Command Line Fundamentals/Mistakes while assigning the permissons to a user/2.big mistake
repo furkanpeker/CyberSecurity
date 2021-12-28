@@ -1,0 +1,5 @@
+Assume that we permited on the /etc/sudoers file that a user can run an .sh file with sudo command. For example like that:  'user	ALL=(ALL) /home/user/example.sh'
+When you think this; it's very big mistake because if a user can access and can edit this .sh file, may be can add a statement of 'sudo -i' for example! When he/she added this statement to the .sh file, then when he/she executed this file; can be root! 
+
+
+!! And by using this vulnarebilty, if an attacker access this user's shell via SSH, he/she can touch such as file and can edit such as. Then he/she can be root! And it is a privilege escalation attack! 

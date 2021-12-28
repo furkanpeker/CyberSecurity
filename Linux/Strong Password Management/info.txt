@@ -1,0 +1,15 @@
+First we download the package that will help us about strong password management: sudo apt install libpam-pwquality
+
+The first attack type that an attacker think will be  password cracking or pen-test! So a strong password is very significant.
+
+Okey, how we will benefit from this package?
+--> There will be a configuration text file in the '/etc/security' directory after installation of package and its name is 'pwquality.conf'. 
+By editing this file, we will change our pc's (linux) password policies!
+
+--> Editing process is simple! Only you need to do is to delete '#' sign from the policiy lines that you want to active it! 
+
+
+In the example; we will activate the password length, the number of character class that made up the password and as last the number of repeating characters in the password.
+
+Once we saved this file, if we want to create an account; the system will prompt a password according to this password policies! 
+Free to try!
